@@ -15,7 +15,7 @@ searchBox.addEventListener("keypress", (event) => {
 })
 
 function search(keyword) {
-    fetch(`http://localhost:8080/search/${keyword}`)
+    fetch(`https://orbital-2024-peeka-book.onrender.com/search/${keyword}`)
     .then(data => data.json())
     .then(arrayOfData => display(arrayOfData));
 }
@@ -44,7 +44,7 @@ function generateHTML(data) {
 }
 
 async function initialize() {
-    const arrayOfFacilities = await fetch("http://localhost:8080/facilities").then(data => data.json())
+    const arrayOfFacilities = await fetch("https://orbital-2024-peeka-book.onrender.com/facilities").then(data => data.json())
     display(arrayOfFacilities);
 
     const cardList = document.querySelectorAll(".card")

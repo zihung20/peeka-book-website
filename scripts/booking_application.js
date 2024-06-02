@@ -15,7 +15,7 @@ function generateHTML(data) {
 
 async function initialize() {
     const facilityId = params.get('facilityId');
-    const data = await fetch(`http://localhost:8080/facility/${facilityId}`)
+    const data = await fetch(`https://orbital-2024-peeka-book.onrender.com/facility/${facilityId}`)
                         .then(data => data.json())
                         .catch(err => console.log(err))
     

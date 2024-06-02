@@ -19,7 +19,7 @@ async function login() {
         'username': username.value,
         'password': password.value
     }
-    fetch("http://localhost:8080/login",{
+    fetch("https://orbital-2024-peeka-book.onrender.com/login",{
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'

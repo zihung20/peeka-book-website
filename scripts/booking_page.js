@@ -33,7 +33,7 @@ function renderToTableBooking(dataSource) {
                 <td>
                     <button class="task-button detail-button">detail</button>
                     <button class="task-button swap-button">swap</button>
-                    <a href="http://localhost:8080/deleteBooking/${booking_id}">
+                    <a href="https://orbital-2024-peeka-book.onrender.com/deleteBooking/${booking_id}">
                         <button class="task-button cancel-button">cancel</button>
                     </a>
                     
@@ -114,7 +114,7 @@ settingButton.addEventListener('click', () => {
 
 // my database only got username "userxz"
 function loadBookingListArray(username) {
-    return fetch(`http://localhost:8080/bookingList/${username}`)
+    return fetch(`https://orbital-2024-peeka-book.onrender.com/bookingList/${username}`)
            .then(data => data.json());
 }
 

@@ -51,7 +51,7 @@ function submitForm() {
     const formData = new FormData(form);
     formData.forEach((value, key) => object[key] = value);
     var json = JSON.stringify(object);
-    fetch("http://localhost:8080/createFacilityProfile",{
+    fetch("https://orbital-2024-peeka-book.onrender.com/createFacilityProfile",{
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
