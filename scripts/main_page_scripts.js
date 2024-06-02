@@ -1,4 +1,3 @@
-import {database} from "../sample/fakeDatabase.js";
 
 const content = document.querySelector(".content");
 const searchBox = document.querySelector("#searchBox");
