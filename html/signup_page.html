@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/signup_page_style.css">
+    <title>Signup</title>
+</head>
+<body>
+    <div class="signup-form">
+        <div><a href="login_page.html">&ltback</a></div>
+        <h2>Signup</h2>
+        <form action="http://localhost:8080/signup" method="POST">
+            <label for="username">Username:</label>
+            <br>
+            <input type="text" id="username" name="username" required autofocus>
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">Password:</label>
+            <progress max="100" value="0" id="meter"></progress>
+            <div id="textbox">should include alphabet and number</div>
+            <br>
+            <input type="password" id="password" name="password" required maxlength="12">
+            <br>
+            <label for="role">Role:</label>
+            <select id="role" name="role" required>
+                <option value="">Select a role</option>
+                <option value="user">User</option>
+                <option value="owner">Owner</option>
+                <option value="both">Both</option>
+            </select>
+            <button type="button">Sign Up</button>
+        </form>
+    </div>
+    <script>
+        var code = document.getElementById("password");
+        var strengthbar = document.getElementById("meter");
+        var display = document.getElementById("textbox");
+        code.addEventListener("keyup", function(event) {
+            checkpassword(code.value);
+        });
+
+        function checkpassword(password) {
+            var strength = 0;
+            if (password.match(/[a-z]+/)) {
+                strength += 1;
+            }
+            if (password.match(/[0-9]+/)) {
+                strength += 1;
+            }
+
+            if (password.length < 6) {
+                display.innerHTML = "minimum number of characters is 6";
+            }
+
+            if (password.length > 12) {
+                display.innerHTML = "maximum number of characters is 12";
+            }
+
+            if(password.length > 6 && password.length < 12 && strengthbar.value != 100) {
+                display.innerHTML = "password is not good enough";
+            }else if(password.length > 6 && password.length < 12 && strengthbar.value == 100) {
+                document.querySelector("button").type="submit";
+                display.innerHTML = "good password";
+            }
+
+            switch (strength) {
+                case 0:
+                strengthbar.value = 0;
+                break;
+
+                case 1:
+                strengthbar.value = 50;
+                break;
+
+                case 2:
+                strengthbar.value = 100;
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

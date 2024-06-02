@@ -1,0 +1,199 @@
+body {
+    justify-content: center;
+    display:flex;
+    height: 100vh;
+    margin-top:3vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#container {
+    width:80vh;
+    min-width: 300px;
+    border-radius: 10px;
+    padding:15px;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+a:visited {
+    color:inherit;
+}
+
+.card {
+    width:fit-content;
+    display:flex;
+    flex-direction: row;
+    margin:3px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.picAndInfo {
+    width:30vh;
+    display:flex;
+    flex-direction: column;
+    padding:5px;
+}
+
+#facilityPicture img {
+    border-radius:3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#user {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    width:15vh;
+    gap:30px;
+    margin:10px;
+    cursor:pointer;
+}
+
+#user #name {
+    font-size:20px;
+    font-weight: bold;
+}
+
+#user #type {
+    font-size:15px;
+    color:grey;
+
+}
+#user img{
+    width:50px;
+    height:50px;
+    border-radius:50px;
+}
+
+/*application table section*/
+table {
+    width: 100%;
+    margin-top:10px;
+    margin-bottom:20px;
+    border-collapse: collapse;
+    
+}
+
+th, td {
+    padding: 8px;
+}
+th {
+    text-align: left;
+}
+
+tbody tr {
+    background-color: rgba(216, 216, 216, 0.139);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+#user-column {
+    width:20%;
+
+}
+#type-column {
+    width: 10%;
+}
+
+#reason-column {
+    width: 40%;
+    overflow: hi;
+}
+
+#operation-column {
+    width: 30%;
+}
+.user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.details-button {
+    background-color: #000000;
+    color: white;
+}
+.approve-button {
+    background-color: #4CAF50;
+    color: white;
+}
+.reject-button {
+    background-color: #f44336;
+    color: white;
+}
+
+/*rating section*/
+.comment {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width:400px;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.user-name {
+    font-weight: bold;
+    margin-right: auto;
+}
+.rating {
+    color: #000;
+    display: flex; 
+    flex-wrap:wrap;
+    gap:40px;
+    width:80vh;
+}
+.comment-text {
+    margin: 10px 0;
+}
+.comment-footer {
+    display: flex;
+    align-items: center;
+}
+.reply-input {
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.send-reply-button {
+    background-color: #000;
+    color: #fff;
+}
+.delete-button {
+    background-color: #ff0000;
+    color: #fff;
+}

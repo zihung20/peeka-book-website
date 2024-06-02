@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/facility_owner_page_style.css">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <title>My facility</title>
+</head>
+<body>
+    <div id="container">
+        <div><a href="main_page.html">&ltback</a></div>
+        <div class="card">
+            <div class="picAndInfo" id="facilityPicture">
+                <img src="../assets/BasketballCourt.jpg">
+            </div>
+            <div class="picAndInfo" id="Info"> 
+                <div id="facilityInformations">
+                    <p id="address">
+                        Kent Ridge Road 81100 Singapore
+                    </p>
+                    <p>rating: 4</p>
+                    <p>capacity: 34 people</p>
+                </div>
+                <div id="userCard">
+                    <p>
+                        Current User:
+                    </p>
+                    <div id="user">
+                        <div>
+                            <p id="name">Kong Zi Hung</p>
+                            <p id="type">personal</p>
+                        </div>
+                        <img src="../assets/BasketballCourt3.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="application">
+            <table id="applicationTable">
+                <thead>Applications
+                    <tr>
+                        <th id="user-column">User</th>
+                        <th id="type-column">Type</th>
+                        <th id="reason-column">Reason</th>
+                        <th id="operation-column">Operation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="user-profile">
+                            <img src="../assets/Basketball_demo.png" alt="User Image" class="user-image">
+                            <span>John Doe</span>
+                        </td>
+                        <td>Personal</td>
+                        <td>Use for training with basketball team</td>
+                        <td>
+                            <button class="button details-button">Details</button>
+                            <button class="button approve-button">Approve</button>
+                            <button class="button reject-button">Reject</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="user-profile">
+                            <img src="../assets/BasketballCourt3.jpeg" alt="User Image" class="user-image">
+                            <span>Jane Smith</span>
+                        </td>
+                        <td>Organization</td>
+                        <td>Organization established 10 years celebration events</td>
+                        <td>
+                            <button class="button details-button">Details</button>
+                            <button class="button approve-button">Approve</button>
+                            <button class="button reject-button">Reject</button>
+                        </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+        <!-- <div class="dashboard">
+            popularity
+        </div>
+        <div class="dashboard">
+            timetable
+        </div>
+        <div class="dashboard">
+            revenue
+        </div> -->
+        <p>Rating</p>
+
+        <div class="rating">
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="../assets/BasketballCourt2.jpeg" alt="User Image" class="user-image">
+                    <span class="user-name">John Doe</span>
+                    <span class="rating">★★★★☆</span>
+                </div>
+                <div class="comment-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quisquam officiis delectus explicabo, odio perferendis unde dicta illo omnis eveniet rem placeat adipisci, quidem vel possimus eos pariatur repellendus alias.
+                </div>
+                <div class="comment-footer">
+                    <input type="text" class="reply-input" placeholder="Write a reply...">
+                    <button class="button send-reply-button">Send Reply</button>
+                    <button class="button delete-button">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const ratingBox = document.querySelector(".rating");
+        function returnHTML() {
+            return `<div class="comment">
+                <div class="comment-header">
+                    <img src="../assets/BasketballCourt2.jpeg" alt="User Image" class="user-image">
+                    <span class="user-name">John Doe</span>
+                    <span class="rating">★★★★☆</span>
+                </div>
+                <div class="comment-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quisquam officiis delectus explicabo, odio perferendis unde dicta illo omnis eveniet rem placeat adipisci, quidem vel possimus eos pariatur repellendus alias.
+                </div>
+                <div class="comment-footer">
+                    <input type="text" class="reply-input" placeholder="Write a reply...">
+                    <button class="button send-reply-button">Send Reply</button>
+                    <button class="button delete-button">Delete</button>
+                </div>
+            </div>
+        </div>`
+        }
+
+        function test() {
+            for(let i =0; i<10; i++) {
+                ratingBox.innerHTML += returnHTML();
+            }
+        }
+
+        test();
+    </script>
+</body>
+</html>

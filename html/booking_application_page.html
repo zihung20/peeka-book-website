@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/booking_application_page_style.css">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <title>Make your Application</title>
+</head>
+<body>
+    <div id="container">
+        <a href="main_page.html">&ltback</a>
+        <div class="card">
+            
+        </div>
+        <form id="applicationDetails" action="http://localhost:8080/createApplicationDetails" method="POST">
+            <Strong>Application form</Strong>
+            <div class="dateAndTime">
+                <p>From</p>
+                <input type="date" name="startingDate">
+                <input type="time" name="startingTime">
+                <p>To</p>
+                <input type="date" name="EndingDate">
+                <input type="time" name="EndingTime">
+                <div>$1110</div>
+            </div>
+            
+            <div id="otherInformation">
+                <div>
+                    <label for="numberOfPeople">Approximate number of People:</label>
+                    <input type="number" id="numberOfPeople" name="numOfPeople" value="1">
+                </div>
+                <div>
+                    <input type="radio" value="personal" name="groupType" checked><label for="personal">personal</label>
+                    <input type="radio" value="organization" name="groupType"><label for="organization">organization</label>
+                    <input type="radio" value="charity" name="groupType"><label for="charity">charity</label>
+                </div>      
+            </div>
+            <label for="reasons">Reasons:</label>
+
+            <textarea id="reasons" name="reasons">Hello!</textarea>
+            <div class="buttonContainer">
+                <button id="reset" type="reset">reset</button>
+                <button id="submit" type="submit">submit</button>
+            </div>
+        </form>
+    </div>
+    <script type="module" src="../scripts/booking_application.js"></script>
+</body>
+</html>

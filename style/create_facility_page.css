@@ -1,0 +1,104 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#content {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 120%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+a {
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+#back-link:hover {
+    text-decoration: underline;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#address .formInput {
+    margin-bottom: 5px;
+}
+
+#pinOnMap img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content:flex-end;
+}
+
+#buttonContainer #reset {
+    background-color:#ccc;
+}
+
+#buttonContainer #add {
+    background-color:black;
+}
+
+.btn {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin:5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#locateButton {
+    color:black;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+textarea.formInput {
+    height: 100px;
+}
+
+#imageOutput {
+    width: 200px;
+    display: none;
+    background-color: #333;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 10px;
+}

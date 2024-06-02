@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/create_facility_page.css">
+    <title>Create your facility</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxD2UXdPc0Yrxh5nu7GsfiLGiJoOI3o3g&libraries=marker,places"></script>
+</head>
+<body>
+    <div id="content">
+        <a href="main_page.html">&lt; back</a>
+        <form action="http://localhost:8080/createFacilityProfile" method="POST" id="facility-form">
+            <div class="formGroup">
+                <label>Select your facility page picture</label>
+                <input type="file" accept=".jpeg" class="formInput" name="facilityPicture" id="imageInput">
+                <img src="" id="imageOutput">
+            </div>
+            <div class="formGroup">
+                <label for="facilityName">Name:</label>
+                <input type="text" id="facilityName" name="facilityName" required class="formInput">
+            </div>
+            <div id="address" class="formGroup">
+                <label>Unit & Street: </label>
+                <input type="text" id="unitAndStreet" placeholder="23A Kent Ridge Road" class="formInput" name="unitAndStreet">
+                <label>Postcode: </label>
+                <input type="text" id="postcode" placeholder="39870" class="formInput" name="postcode">
+                <label>Region: </label>
+                <input type="text" id="region" placeholder="Singapore" class="formInput" name="region">
+                <!-- <button type="button"
+                id="locateButton" class="btn" onclick="codeAddress()">Locate on Map</button> -->
+            </div>
+            <div id="map" class="formGroup">
+                
+            </div>
+            <div class="coordinate">
+                <p id="latitudeText">Latitude:</p>
+                <input type="text" id="latitude" name="latitude" style="display:none;">
+                <p id="longitudeText">Longitude:</p>
+                <input type="text" id="longitude" name="longitude" style="display:none;">
+            </div>
+            <div class="formGroup">
+                <label for="facilityType">Type</label>
+                <select id="facilityType" name="facilityType" required class="formInput">
+                    <option value="">Select type</option>
+                    <option value="Hall">Hall</option>
+                    <option value="Gym">Gym</option>
+                    <option value="Pool">Pool</option>
+                    <option value="Meeting Room">Meeting Room</option>
+                    <option value="NUSField">NUS Field</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="formGroup">
+                <label>Capacity</label>
+                <input type="number" name="capacity" required class="formInput">
+            </div>
+            <div class="formGroup">
+                <label>Fees/hour</label>
+                <input type="number" name="fees" step=".01" class="formInput">
+            </div>
+            <div class="formGroup">
+                <label>Remarks: </label>
+                <textarea name="remarks" class="formInput"></textarea>
+            </div>
+            <div id="buttonContainer" class="formGroup">
+                <button id="reset" type="reset" class="btn">Reset</button>
+                <button id="add" type="button" class="btn">Add</button>
+            </div>
+        </form>
+    </div>
+    <script src="../scripts/create_facility_page_scripts.js"></script>
+</body>
+</html>

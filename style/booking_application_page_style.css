@@ -1,0 +1,135 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+a {
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:30px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+#map {
+    width:50%;
+}
+#map img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+#facilityInformations p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+form {
+    margin-top: 15px;
+}
+.dateAndTime {
+    margin-top: 2px;
+    margin-bottom:10px;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="date"],
+input[type="time"],
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#otherInformation {
+    display: flex;
+    justify-content: space;
+    gap:10vh;
+}
+input[type="number"] {
+    width: 40px;
+}
+
+input[type="radio"] {
+    margin: 1px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap:15px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#reset {
+    background-color: #bbb;
+    color: #ffffff;
+}
+
+#reset:hover {
+    background-color: #999;
+}
+
+#submit {
+    background-color: #000;
+    color: #fff;
+}
+
+#submit:hover {
+    background-color: #333;
+}

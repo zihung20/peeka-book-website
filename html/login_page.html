@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/login_page_style.css">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <title>Peeka Book</title>
+</head>
+<body>
+    <header><a href="javascript:window.location.reload(true)">PeekaBook</a></header>
+    <hr>
+    <form class="login-box">
+        <h1>Log In</h1>
+        <div>
+            <label for="username">Username</lable><br>
+            <input id="username" type="text" placeholder="username" autofocus name="username">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label><br>
+            <input id="password" type="password" placeholder="password" name="password">
+        </div>
+        <br>
+        <div>
+            <a href="email_verification_page.html">forgot your password?</a>
+            <br>
+            new user? <a href="signup_page.html">sign-up</a>
+        </div>
+        
+        <div id="wrongPassword">
+            <p>Wrong password / username</p>
+        </div>
+        <br>
+        <button id="loginButton" type="button">Log in</button>
+    </form>
+    <hr>
+    <footer>
+        &copy;2024 Peeka Book All right reseverd.
+    </footer>
+    <script type="module" src="../scripts/login_page_scripts.js"></script>
+</body>
+</html>

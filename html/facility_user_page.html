@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/facility_owner_page_style.css">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <style>
+        .button-container {
+          display: flex;
+          justify-content: right;
+          margin-top: 20px;
+        }
+        
+        .button-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .book-button {
+          background-color: #000;
+          color: #fff;
+          margin-right: 10px;
+        }
+        
+        .contact-button {
+          background-color: #cacaca;
+          color: #ffffff;
+        }
+        
+        .button:hover {
+          background-color: #333; /* Darken background on hover */
+        }
+        
+        .button:hover.contact-button {
+          background-color: #fff; /* Maintain white background on hover for contact button */
+          color: #000; /* Change text color to black on hover for contact button */
+        }
+        </style>
+    <title>My facility</title>
+</head>
+<body>
+    <div id="container">
+        <div><a href="main_page.html">&ltback</a></div>
+        <div class="card">
+            
+        </div>
+        <div class="button-container">
+            <button class="button book-button">Book</button>
+            <button class="button contact-button">Contact</button>
+        </div>
+        
+        <p>Rating</p>
+        <div class="rating"> 
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="../assets/BasketballCourt2.jpg" alt="User Image" class="user-image">
+                    <span class="user-name">John Doe</span>
+                    <span class="rating">★★★★☆</span>
+                </div>
+                <div class="comment-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quisquam officiis delectus explicabo, odio perferendis unde dicta illo omnis eveniet rem placeat adipisci, quidem vel possimus eos pariatur repellendus alias.
+                </div>
+                <!-- <div class="comment-footer">
+                    <input type="text" class="reply-input" placeholder="Write a reply...">
+                    <button class="button send-reply-button">Send Reply</button>
+                    <button class="button delete-button">Delete</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../scripts/facility_user_page_scripts.js"></script>
+</body>
+</html>
